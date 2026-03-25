@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --hatter: whitesmoke;
+  --betu: black;
+  --radius: 10px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  padding: 30px;
+}
+
+table {
+  width: 250px;
+  background-color: var(--hatter);
+  color: var(--betu);
+  padding: 5px;
+  border: 1px solid var(--betu);
+  border-radius: var(--radius);
+  border-collapse: collapse;
+}
+
+td,
+th {
+  padding: 5px;
+  border: 1px solid var(--betu);
+}
