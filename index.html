@@ -10,43 +10,35 @@
   </head>
   <body>
     <main>
-      <table>
-        <tbody>
-          <tr>
-            <td>
-              <section>
-                <h2>Másodfokú egyenlet gyökeit kiszámoló program</h2>
-
-                <p>Ax² + Bx + C = 0</p>
-
-                <p>Kérem a három együtthatót:</p>
-
-                <label for="a">A = </label>
-                <input type="number" name="a" id="a" /><br />
-
-                <label for="b">B = </label>
-                <input type="number" name="b" id="b" /><br />
-
-                <label for="c">C = </label>
-                <input type="number" name="c" id="c" /><br />
-
-                <hr />
-
-                <button id="gomb">Számolás</button>
-                <button type="reset">Újra</button>
-
-                <hr />
-
-                <label for="x1">X1 = </label>
-                <input type="text" name="x1" id="x1" value="?" /><br />
-
-                <label for="x2">X2 = </label>
-                <input type="text" name="x2" id="x2" value="?" />
-              </section>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+      <section>
+        <article>
+          <h1>Másodfokú egyenlet gyökeit kiszámoló program</h1>
+          <p>Ax² + Bx + C = 0</p>
+          <p>Kérem a három együtthatót:</p>
+          <div class="form-group">
+              <label for="a">A = </label>
+              <input type="number" name="a" id="a" /><br />
+          </div>
+          <div class="form-group">
+              <label for="b">B = </label>
+              <input type="number" name="b" id="b" /><br />
+          </div>
+          <div class="form-group">
+              <label for="c">C = </label>
+              <input type="number" name="c" id="c" /><br />
+          </div>
+              <button id="gomb">Számolás</button>
+          <div class="form-group">
+              <label for="x1">X1 = </label>
+              <input type="text" name="x1" id="x1" value="?" /><br />
+          </div>
+          <div class="form-group">
+              <label for="x2">X2 = </label>
+              <input type="text" name="x2" id="x2" value="?" />
+          </div>
+          <button type="reset">Újra</button>
+        </article>
+      </section>
     </main>
   </body>
 </html>

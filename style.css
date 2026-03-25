@@ -1,33 +1,101 @@
+:root {
+  --hatter: whitesmoke;
+  --betu: black;
+  --aktiv: #36302f;
+  --radius: 10px;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+  outline: none;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-:root {
-  --hatter: whitesmoke;
-  --betu: black;
-  --radius: 10px;
-}
-
 main {
   display: flex;
   justify-content: center;
   padding: 30px;
+  text-align: center;
 }
 
-table {
-  width: 250px;
+section {
+  width: 450px;
   background-color: var(--hatter);
   color: var(--betu);
   padding: 5px;
   border: 1px solid var(--betu);
   border-radius: var(--radius);
-  border-collapse: collapse;
 }
 
-td,
-th {
-  padding: 5px;
-  border: 1px solid var(--betu);
+article {
+  padding: 15px;
+}
+
+p{
+  font-size: calc(8px + 1.5vw);
+  padding: 5px 5px 10px 5px;
+}
+
+.form-group {
+  display: flex;
+  width: 100%;
+  padding: 0px calc(5px + 3vw);
+}
+
+.form-group label {
+  font-size: calc(8px + 1.5vw);
+  width: 20%;
+}
+
+.form-group input {
+  width: 80%;
+  margin-bottom: 3px;
+}
+
+h1 {
+  font-size: calc(16px + 1vw);
+  padding: 0px 5px 10px 5px;
+}
+
+button:first-of-type{
+  margin-bottom: 30px;
+}
+
+button {
+    font-size: calc(6px + 1.5vw);
+    display: block;
+    margin: 15px auto 0px auto;
+    padding: 7px 15px;
+    border: 0;
+    border-radius: 100px;
+    background-color: var(--betu);
+    color: var(--hatter);
+    font-weight: bold;
+}
+
+button:hover {
+    box-shadow: 0 0 10px black;
+    transform: scale(1.1);
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: var(--aktiv);
+    transition: all 0.25s;
+    -webkit-transition: all 0.25s;
+    box-shadow: none;
+    transform: scale(0.98);
+}
+
+@media (max-width: 480px){
+  section{
+    width: 250px;
+  }
 }
