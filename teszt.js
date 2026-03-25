@@ -35,7 +35,7 @@ function tesztesetek() {
       a: 0,
       b: 0,
       c: 5,
-      vart: { x1: "Nincs megoldás", x2: "Nincs megoldás" },
+      vart: { x1: "Lehetetlen", x2: "Lehetetlen" },
       szoveg:
         "Hiba: Ha első két szám nulla és harmadik valami más, akkor nem kellene, hogy legyen megoldás.",
     },

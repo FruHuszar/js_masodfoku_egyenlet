@@ -23,10 +23,15 @@ export function MasodfokuEgyenletMegoldo(a, b, c) {
     x2: "Minden szám",
   };
 
+  const Lehetetlen = {
+    x1: "Lehetetlen",
+    x2: "Lehetetlen",
+  };
+
   if (a === 0 && b != 0 && c != 0) {
     return nincsEredmeny;
   } else if (a === 0 && b === 0 && c != 0) {
-    return nincsEredmeny;
+    return Lehetetlen;
   } else if (a === 0 && b === 0 && c === 0) {
     return Barmi;
   } else if (d < 0) {
